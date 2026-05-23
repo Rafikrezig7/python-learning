@@ -33,4 +33,24 @@ print(f"Your BMI is {round(bmi, 2)}")  # f-strings like backticks in JS
 
 **Project:** Tip Calculator (input bill, tip%, people → calculate per person cost)
 
+### Day 3 - Random Module & Lists
+
+**Topics:**
+
+- `import random` module
+- `random.randint()`, `random.random()`, `random.uniform()`, `random.choice()`
+- Lists: indexing, slicing, modifying, `.append()`
+- Nested lists
+- `if/elif/else` conditionals
+
+**Key Example:**
+
+```python
+friends = ["Rafik", "Sami", "Yazid"]
+random_friend = random.choice(friends)  # Pick random item from list
+print(random_friend)
+```
+
+**Project:** Rock Paper Scissors game (user vs computer, logic with list indexing)
+
 ---
