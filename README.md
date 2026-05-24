@@ -50,6 +50,38 @@ friends = ["Rafik", "Sami", "Yazid"]
 random_friend = random.choice(friends)  # Pick random item from list
 print(random_friend)
 ```
+### Day 4 - Loops & Functions
+**Topics:**
+- `for` loops (iterate lists, ranges)
+- Built-in functions: `sum()`, `max()`
+- `while` loops
+- Define functions with `def`
+- `range(start, end)` for number sequences
+
+**Key Examples:**
+```python
+# For loop
+for fruit in fruits:
+    print(fruit)
+
+# Sum and max
+total = sum([10, 14, 15, 9])  # 48
+highest = max([10, 14, 15, 9])  # 15
+
+# While loop
+while cats > 0:
+    print('cute cat')
+    cats -= 1
+
+# Functions
+def my_function():
+    print('hello')
+my_function()
+```
+
+**Project:** Password Generator (combine letters/symbols/numbers, shuffle, display)
+
+---
 
 **Project:** Rock Paper Scissors game (user vs computer, logic with list indexing)
 
