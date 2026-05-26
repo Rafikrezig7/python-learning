@@ -33,6 +33,8 @@ print(f"Your BMI is {round(bmi, 2)}")  # f-strings like backticks in JS
 
 **Project:** Tip Calculator (input bill, tip%, people → calculate per person cost)
 
+---
+
 ### Day 3 - Random Module & Lists
 
 **Topics:**
@@ -50,8 +52,15 @@ friends = ["Rafik", "Sami", "Yazid"]
 random_friend = random.choice(friends)  # Pick random item from list
 print(random_friend)
 ```
+
+**Project:** Rock Paper Scissors game (user vs computer, logic with list indexing)
+
+---
+
 ### Day 4 - Loops & Functions
+
 **Topics:**
+
 - `for` loops (iterate lists, ranges)
 - Built-in functions: `sum()`, `max()`
 - `while` loops
@@ -59,6 +68,7 @@ print(random_friend)
 - `range(start, end)` for number sequences
 
 **Key Examples:**
+
 ```python
 # For loop
 for fruit in fruits:
@@ -83,6 +93,42 @@ my_function()
 
 ---
 
-**Project:** Rock Paper Scissors game (user vs computer, logic with list indexing)
+### Day 5 - While Loops & Game Logic
+
+**Topics:**
+
+- `while` loops (condition-based repetition)
+- Loop control: setting `Game_Over = True` to exit
+- Building strings dynamically
+- Tracking state with flags and lists
+- String membership: `if letter in word`
+- Rebuilding display each iteration
+
+**Key Example:**
+
+```python
+Game_Over = False
+while not Game_Over:
+    Guess = input("Guess a letter: ").lower()
+
+    if Guess in Chosen_word:
+        Correct_Letters.append(Guess)
+
+    # Rebuild display with correct guesses
+    Display = ""
+    for Letter in Chosen_word:
+        if Letter in Correct_Letters:
+            Display += Letter
+        else:
+            Display += "_"
+
+    print(Display)
+
+    # Exit condition
+    if "_" not in Display:
+        Game_Over = True
+```
+
+**Project:** Hangman game (guess letters, track correct guesses, display progress, win condition)
 
 ---
