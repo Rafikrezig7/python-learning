@@ -7,6 +7,7 @@ Display = ""
 for letter in Chosen_word:
     Display += "_"
 
+
 Game_Over = False
 Correct_Letters = []
 
