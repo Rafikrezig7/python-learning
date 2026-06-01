@@ -34,10 +34,10 @@ while not bidding_over:
         bidding_over=True
     print("\n"*100)
 #find highest bid
-    winner_name=""
-    top_bid=0
-    for key in bids:
-        if bids[key]>top_bid:
-            top_bid=bids[key]
-            winner_name=key
+winner_name=""
+top_bid=0
+for key in bids:
+    if bids[key]>top_bid:
+        top_bid=bids[key]
+        winner_name=key
 print(f"The winner is {winner_name} with a bid of ${top_bid}")
