@@ -1,13 +1,36 @@
-#.title turns a word into title by making the 1st word letter in caps and the otheres in lowercase
-# def format_name(f_name, l_name):
-#     formated_f_name=f_name.title()
-#     formated_l_name=l_name.title()
-#     return f"{formated_f_name}{formated_l_name}"
-# print(format_name("AngELa","yU"))
+import art
+print(art.logo)
 
-def fucntion_1(text):
-    return text+text
-def function_2(text):
-    return text.title()
-output = function_2(fucntion_1("hello"))
-print(output)
+def add(n1, n2): return n1 + n2
+def subtract(n1, n2): return n1 - n2
+def multiply(n1, n2): return n1 * n2
+def divide(n1, n2): return n1 / n2
+
+operations = {"+": add, "-": subtract, "*": multiply, "/": divide}
+
+def calculator():
+    num1 = float(input("What's the first number?: "))
+    for symbol in operations:
+        print(symbol)
+    
+    should_continue = True
+ 
+    while should_continue:
+        operation_symbol = input("Pick an operation: ")
+        num2 = float(input("What's the next number?: "))
+        
+        calculation_function = operations[operation_symbol]
+        answer = calculation_function(num1, num2)
+        
+        print(f"{num1} {operation_symbol} {num2} = {answer}")
+
+
+        choice = input(f"Type 'y' to continue with {answer}, or 'n' to restart: ")
+        if choice == 'y':
+            num1 = answer
+        else:
+            should_continue = False
+            print("\n" * 20) 
+            calculator() 
+
+calculator()
