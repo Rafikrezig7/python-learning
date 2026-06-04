@@ -40,4 +40,4 @@ for key in bids:
     if bids[key]>top_bid:
         top_bid=bids[key]
         winner_name=key
-print(f"The winner is {winner_name} with a bid of ${top_bid}")
+print(f"The winner is {winner_name} with a bid of  ${top_bid}")
