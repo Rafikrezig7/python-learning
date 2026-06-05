@@ -7,3 +7,7 @@ items=content.split("\n") #split the content by new line and store it to a list
 items.sort() #sort the list alphabetically
 for item in items:
     print("- " + item)
+
+###writing to a file
+items= "milk\ncookies\nbread\norange juice\n"
+file.open
